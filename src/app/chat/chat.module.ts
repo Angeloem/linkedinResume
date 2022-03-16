@@ -4,6 +4,7 @@ import { ChatComponent } from './components/chat/chat.component';
 import { PageComponent } from './page/page/page.component';
 import { HeaderComponent } from './components/header/header.component';
 import { BottomComponent } from './components/bottom/bottom.component';
+import { TilesComponent } from './components/tiles/tiles.component';
 
 
 
@@ -12,7 +13,8 @@ import { BottomComponent } from './components/bottom/bottom.component';
     ChatComponent,
     PageComponent,
     HeaderComponent,
-    BottomComponent
+    BottomComponent,
+    TilesComponent
   ],
   exports: [
     PageComponent

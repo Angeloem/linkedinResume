@@ -1,0 +1,70 @@
+.main-component {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  margin: 10px 0;
+
+  .avatar {
+    flex: 1 1 20px;
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+    border-radius: 30px;
+    overflow: hidden;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .main-block {
+    flex: 1 1 90%;
+    display: grid;
+    grid-template-rows: auto 1fr;
+
+    margin-left: 10px;
+
+    .text {
+      border-radius: 10px;
+      overflow: hidden;
+      height: fit-content;
+
+      div {
+        height: fit-content;
+        padding: 10px;
+        resize: none;
+
+
+        font-size: 75%;
+        color: rgba(0, 0, 0, 0.7);
+
+        border: none;
+
+        background: #edefed;
+      }
+
+      .sent {
+        background: #f03a28;
+        color: white;
+      }
+
+      .received {
+        background: rgba(240, 58, 40, 0.09);
+      }
+    }
+
+    .timed {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+
+      font-size: 60%;
+      color: rgba(0, 0, 0, 0.7);
+
+      margin: 5px 0;
+    }
+  }
+}

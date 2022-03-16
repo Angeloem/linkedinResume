@@ -1,1 +1,13 @@
-<p>chat works!</p>
+<!-- this is a bit complex -->
+<!-- the view is rendered depending on the type of input -->
+<!-- if the input is a sent one, we show it on the right, else show it on the left-->
+<!-- the color depends on this too -->
+
+<div class="main-container">
+  <!-- check if the type is a sent or received one -->
+  <div class="flexer" *ngFor="let t of tile">
+    <div *ngIf="t.sent"></div>
+    <app-tiles [tile]="t"></app-tiles>
+    <div *ngIf="!t.sent"></div>
+  </div>
+</div>

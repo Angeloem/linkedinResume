@@ -1,0 +1,25 @@
+<!-- STRUCTURE -->
+<!-- this is a flex of an image and a grid|block -->
+<!-- the block contains a textarea and a flex at the bottom-->
+<div class="main-component">
+  <!-- the avatar div -->
+  <div class="avatar">
+    <img [src]="tile.avatar" alt="the avatar of a {{tile.avatar ? 'Sender': 'Receiver'}}">
+  </div>
+
+  <!-- the main block div -->
+  <div class="main-block">
+    <!-- here is the textarea block-->
+    <div class="text">
+      <div [ngClass]="tile.sent ? 'sent':'received'">{{tile.text}}</div>
+    </div>
+
+    <!-- here is the time and date area-->
+    <!-- this is a flex -->
+    <div class="timed">
+      <div>{{tile.time}}&nbsp;</div>
+      |
+      <div>&nbsp;{{tile.date}}</div>
+    </div>
+  </div>
+</div>
