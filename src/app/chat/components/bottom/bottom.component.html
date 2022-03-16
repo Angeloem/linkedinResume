@@ -1,0 +1,25 @@
+<!-- this is a flex of one flex and relative-->
+<!-- the first contains the icons-->
+<!--the relative contains a form and  positioned icon-->
+<div class="main-container">
+  <!-- the icons flex -->
+  <div class="icons">
+    <div>➕</div>
+    <div>📸</div>
+    <div>🎙</div>
+    <div>😁</div>
+  </div>
+
+  <!-- the form and send positioned-->
+  <div class="form">
+    <!-- have the form first-->
+    <div class="form-input">
+      <input type="text" placeholder="Type your message" (change)="_formChanged($event)">
+    </div>
+
+    <!-- the send icon/emoji-->
+    <div class="send">
+      📨
+    </div>
+  </div>
+</div>
