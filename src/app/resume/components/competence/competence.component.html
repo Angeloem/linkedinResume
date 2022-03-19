@@ -1,0 +1,8 @@
+<!-- a block list containing a header and a list of competencies-->
+<div class="main-component">
+  <h3 class="title">Skills</h3>
+
+  <app-competence-tile *ngFor="let comp of competences" [incoming]="comp.level"
+                       [text]="comp.text"></app-competence-tile>
+</div>
+

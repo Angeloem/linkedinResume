@@ -1,0 +1,9 @@
+.main-component {
+  display: grid;
+  grid-template-columns: 2fr 3fr 2fr;
+
+  app-pages {
+    height: 100vh;
+    background: linear-gradient(to top, #971f7e, #2421bd);
+  }
+}

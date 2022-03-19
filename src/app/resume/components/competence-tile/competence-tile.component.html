@@ -1,0 +1,12 @@
+<!--this is a flex, a flex of a text and flexes-->
+<!--for much more capability, we are going to place the flex within in a grid-->
+<div class="main-component">
+  <!--  the first component is a text-->
+  <div [innerText]="text" class="text"></div>
+
+  <!--  the second component is a grid, we need to put the circles implementing competences in these -->
+  <div class="circle-container">
+    <!-- the circles component itself -->
+    <div [ngClass]="incoming - 1 >= circle ? 'white circle': 'circle'" *ngFor="let circle of circles"></div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+.main-component {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .text {
+    flex: 2 2 40%;
+    font-size: 90%;
+
+    margin: 5px 0;
+  }
+
+  .circle-container {
+    flex: 1 1 55%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    .circle {
+      border: 1px solid white;
+      border-radius: 100px;
+      height: 15px;
+      width: 15px;
+      overflow: hidden;
+    }
+
+    .white {
+      background: white;
+    }
+  }
+}
