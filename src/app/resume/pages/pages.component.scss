@@ -3,7 +3,9 @@
 
   margin: 5px 10px;
 
-  overflow: hidden;
+  //overflow: hidden;
+
+  height: calc(100% - 30px);
 
   .user-centric {
     border-radius: 5px;
@@ -11,6 +13,12 @@
 
     flex-basis: 40%;
 
+    height: 100%;
+
     background: rgba(255, 255, 255, 0.24);
+
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
   }
 }
