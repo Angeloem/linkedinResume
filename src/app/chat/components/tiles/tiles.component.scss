@@ -46,12 +46,12 @@
       }
 
       .sent {
-        background: #f03a28;
-        color: white;
+        background: #FEB49F;
+        color: #212121;
       }
 
       .received {
-        background: rgba(240, 58, 40, 0.09);
+        background: #FEECE7;
       }
     }
 
@@ -62,7 +62,7 @@
 
 
       font-size: 60%;
-      color: rgba(0, 0, 0, 0.7);
+      color: rgba(0, 0, 0, 0.7) !important;
 
       margin: 5px 0;
     }

@@ -9,6 +9,9 @@ import { LevelComponent } from './components/level/level.component';
 import { PagesComponent } from './pages/pages.component';
 import { ContactTileComponent } from './components/contact-tile/contact-tile.component';
 import { CompetenceTileComponent } from './components/competence-tile/competence-tile.component';
+import { BackgeeComponent } from './components/backgee/backgee.component';
+import { HeaderTextComponent } from './components/header-text/header-text.component';
+import { RadialCountComponent } from './components/radial-count/radial-count.component';
 
 
 @NgModule({
@@ -21,11 +24,15 @@ import { CompetenceTileComponent } from './components/competence-tile/competence
     LevelComponent,
     PagesComponent,
     ContactTileComponent,
-    CompetenceTileComponent
+    CompetenceTileComponent,
+    BackgeeComponent,
+    HeaderTextComponent,
+    RadialCountComponent
   ],
-  exports: [
-    PagesComponent
-  ],
+    exports: [
+        PagesComponent,
+        RadialCountComponent
+    ],
   imports: [
     CommonModule
   ]

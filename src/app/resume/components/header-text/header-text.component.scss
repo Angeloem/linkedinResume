@@ -1,0 +1,33 @@
+.main-component {
+  * {
+    color: rgba(0, 0, 0, 0.6) !important;
+  }
+
+  margin: 10px 0;
+
+  .heads {
+    .main-head {
+      display: flex;
+      align-items: center;
+
+      h6 {
+        font-size: 110%;
+        margin: 0;
+        font-weight: bold;
+      }
+    }
+
+    .sub {
+      font-weight: 300;
+      color: #7042a4 !important;
+    }
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+
+    //font-weight: 300;
+    font-size: 90%;
+  }
+}

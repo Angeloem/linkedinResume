@@ -1,1 +1,18 @@
-<p>header-text works!</p>
+<!-- this is a block display consisting of a header and text component -->
+<div class="main-component">
+  <!-- the headers -->
+  <div class="heads">
+    <!-- main head-->
+    <div class="main-head">
+      <!-- this is a flex of a header component and a year accompanying that component-->
+      <h6 class="header">{{headerTxt.header}}</h6>
+      <div class="year">({{headerTxt.year}})</div>
+    </div>
+
+    <!-- sub header-->
+    <div class="sub">{{headerTxt.subhead}}</div>
+  </div>
+
+  <!-- the text component -->
+  <p>{{headerTxt.text}}</p>
+</div>

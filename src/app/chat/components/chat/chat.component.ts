@@ -16,7 +16,7 @@ export class ChatComponent implements OnInit {
         sent: false,
         avatar: "assets/images/doe.jpg",
         date: "March 19",
-        text: "Happy Birthday Kiddo",
+        text: "Hi",
         time: "23:05"
       },
       {

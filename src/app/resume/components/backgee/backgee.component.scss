@@ -1,0 +1,44 @@
+.main-container {
+  margin: 0;
+  padding: 50px 10px;
+
+  background: white;
+
+  height: 100%;
+
+  .loop-container {
+    .content-h {
+      .header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        width: 100%;
+
+        .pill {
+          text-align: center;
+          flex-basis: 50%;
+          background: #5d2f90;
+          color: rgba(255, 255, 255, 0.95);
+
+          padding: 10px 15px;
+          border-radius: 100px;
+
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+
+        .line {
+          height: 2px;
+          flex-basis: 50%;
+          background: #5d2f90;
+        }
+      }
+    }
+
+    .content {
+      padding-top: 20px;
+      padding-left: 50px;
+    }
+  }
+}

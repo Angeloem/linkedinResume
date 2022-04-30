@@ -1,1 +1,22 @@
-<p>backgee works!</p>
+<div class="main-container">
+  <div class="loop-container" *ngFor="let item of headerTxt">
+    <!-- the education part, we have education details here-->
+    <div class="content-h">
+      <div class="header">
+        <!--header consists of a pill and a line -->
+        <!-- the pill here! -->
+        <div class="pill">{{item.item}}</div>
+
+        <!-- the line here -->
+        <div class="line"></div>
+      </div>
+    </div>
+
+    <!-- the contents -->
+    <div class="content">
+      <div *ngFor="let hdr of item.content">
+        <app-header-text [headerTxt]="hdr"></app-header-text>
+      </div>
+    </div>
+  </div>
+</div>
