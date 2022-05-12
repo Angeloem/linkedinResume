@@ -1,5 +1,38 @@
-<div class="main-component">
-  <div></div>
-  <app-pages></app-pages>
+<div class="main-container">
+  <div class="accepted">
+    <div class="header">
+      Selected Candidates
+    </div>
+
+    <div class="selected">
+      <ul>
+        <li *ngFor="let user of selected">
+          <div class="avatar"></div>
+          <span>{{ user }}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="cards">
+    <div
+      class="cards-container">
+
+      <!-- this app pages will take a people object for it to display at the moment -->
+      <app-pages [name]="people[index]"></app-pages>
+
+      <!-- -->
+      <div class="accept-reject-tile">
+        <div class="accept-reject">
+          <div id="previous" (click)="_alterIndex(-1)">Previous</div>
+          <div class="pipe">|</div>
+          <div id="reject" (click)="_reject()">Reject</div>
+          <div class="pipe">|</div>
+          <div id="accept" (click)="_accept()">Accept</div>
+          <div class="pipe">|</div>
+          <div id="next" (click)="_alterIndex(1)">Next</div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div></div>
 </div>

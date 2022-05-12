@@ -1,9 +1,125 @@
-.main-component {
-  display: grid;
-  grid-template-columns: 2fr 3fr 2fr;
+.main-container {
+  background: whitesmoke;
+  color: #5d5d5d;
+  display: flex;
+  justify-content: space-evenly;
 
-  app-pages {
-    height: 100vh;
-    background: linear-gradient(to top, #971f7e, #2421bd);
+  overflow: hidden;
+
+  height: 100vh;
+
+  .accepted {
+    flex-basis: 30%;
+
+    margin-top: 50px;
+
+    padding: 10px;
+
+    background: rgba(255, 255, 255, 0.78);
+    border-radius: 10px;
+
+    .selected {
+      cursor: pointer;
+
+      ul li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        list-style: none;
+
+        margin: 8px 0;
+
+        .avatar {
+          height: 40px;
+          width: 40px;
+
+          border-radius: 50px;
+          background: gray;
+        }
+      }
+    }
+  }
+
+  .cards {
+    padding-top: 50px;
+    //width: max-content;
+    flex-basis: 50%;
+    //overflow: scroll;
+    //box-sizing: border-box;
+    //padding-right: -50px;
+
+    .cards-container {
+      position: relative;
+
+      overflow: hidden;
+
+
+      display: grid;
+      //grid-template-columns: 1fr 1fr;
+      gap: 10px;
+
+      app-pages {
+        border: 1px solid orange;
+        border-radius: 10px;
+
+        background: rgba(114, 133, 34, 0.77);
+      }
+
+      .accept-reject-tile {
+        opacity: .4;
+        position: fixed;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        background: #ffffff;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 5px 20px;
+
+        //width: 80%;
+        //height: 100px;
+        border: 1px solid #5d5d5d;
+        border-radius: 10px;
+
+        .user-profile {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+
+          .avatar {
+            height: 70px;
+            width: 70px;
+
+            border-radius: 50px;
+            overflow: hidden;
+            background: #808080;
+          }
+
+          .username {
+            font-weight: bold;
+            font-size: 110%;
+          }
+        }
+
+        .accept-reject {
+          display: flex;
+
+          #accept, .pipe, #reject, #previous, #next {
+            padding: 10px 10px;
+
+            cursor: pointer;
+          }
+        }
+      }
+
+      .accept-reject-tile:focus, .accept-reject-tile:hover {
+        opacity: 1;
+      }
+    }
   }
 }
